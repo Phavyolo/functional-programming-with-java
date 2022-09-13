@@ -12,6 +12,8 @@ public class FP01Structured {
 
 	private static void printAllNumberInListStructured(List<Integer> numbers) {
 		
+		// How to loop the number? 
+		// -- structured is always focused on the HOW.
 		for(int number: numbers) {
 			System.out.println(number);
 		}
