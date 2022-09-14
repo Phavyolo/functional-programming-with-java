@@ -6,7 +6,11 @@ public class FP01Structured {
 
 	public static void main(String[] args) {
 		
-		printAllNumberInListStructured(List.of(12,9,13,4,6,2,4,12,15));
+		List<Integer> numbers = List.of(12,9,13,4,6,2,4,12,15);
+		
+//		printAllNumberInListStructured(numbers);
+		
+		printEvenNumberInListStructured(numbers);
 
 	}
 
@@ -16,6 +20,18 @@ public class FP01Structured {
 		// -- structured is always focused on the HOW.
 		for(int number: numbers) {
 			System.out.println(number);
+		}
+		
+	}
+	
+	private static void printEvenNumberInListStructured(List<Integer> numbers) {
+		
+		// How to loop the number? 
+		// -- structured is always focused on the HOW.
+		for(int number: numbers) {
+			if (number % 2 == 0) {
+				System.out.println(number);
+			}
 		}
 		
 	}
