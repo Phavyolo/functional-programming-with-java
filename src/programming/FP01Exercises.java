@@ -18,7 +18,11 @@ public class FP01Exercises {
 		
 //		printCoursesContainingSpringInListFunctional(courses);
 		
-		printCoursesWithAt4LettersInListFunctional(courses);
+//		printCoursesWithAt4LettersInListFunctional(courses);
+		
+//		printCubeOfOddNumberInListFunctional(numbers);
+		
+		printNumberOfCharacteresInCourseInListFunctional(courses);
 
 	}
 	
@@ -39,14 +43,26 @@ public class FP01Exercises {
 		courses.stream()
 		.filter(course -> course.contains("Spring"))
 		.forEach(System.out::println); 
-		
 	}
 	
 	private static void printCoursesWithAt4LettersInListFunctional(List<String> courses) {
 		courses.stream()
 		.filter(course -> course.length() >= 4)
 		.forEach(System.out::println);
+	}
+	
+	private static void printCubeOfOddNumberInListFunctional(List<Integer> numbers) {
+		numbers.stream()
+		.filter(number -> number%2 == 1) 
+		.map(number -> number * number * number)
+		.forEach(System.out::println);
 		
+	}
+	
+	private static void printNumberOfCharacteresInCourseInListFunctional(List<String> courses) {
+		courses.stream()
+		.map(course -> course + " " + course.length())
+		.forEach(System.out::println);
 	}
 
 }
