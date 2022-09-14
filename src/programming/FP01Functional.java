@@ -11,6 +11,7 @@ public class FP01Functional {
 //		printAllNumberInListFunctional(numbers);
 		
 		printEvenNumberInListFunctional(numbers);
+		
 
 	}
 	
