@@ -53,7 +53,7 @@ public class FP01Exercises {
 	
 	private static void printCubeOfOddNumberInListFunctional(List<Integer> numbers) {
 		numbers.stream()
-		.filter(number -> number%2 == 1) 
+		.filter(number -> number%2 != 0) 
 		.map(number -> number * number * number)
 		.forEach(System.out::println);
 		
